@@ -29,6 +29,9 @@ public class Ejer1 {
 			consulta = "INSERT INTO Estudiantes (nombre, apellido, fecha_nacimiento, email, telefono) VALUES ('José Manuel', 'Maya', '2005-09-15', 'jm.maya@iesnervion.es', '732144988')";
 			sentencia.executeUpdate(consulta);
 			
+			consulta = "INSERT INTO Profesores (nombre, apellido, especialidad, email) VALUES ('Elena', 'Rivero', 'Programación', 'elena.rivero@iesnervion.es')";
+			sentencia.executeUpdate(consulta);
+			
 		} catch (SQLException e) {
 			System.out.println("Error al establecer la conexión con la base de datos: " + e);
 		}
