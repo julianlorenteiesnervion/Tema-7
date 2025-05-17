@@ -20,7 +20,7 @@ public class Ejer7 {
 		
 		String nombre;
 		String apellido;
-		String fecha_nacimiento;
+		String fechaNacimiento;
 		String email;
 		String telefono;
 		
@@ -38,7 +38,7 @@ public class Ejer7 {
 			apellido = reader.nextLine();
 			
 			System.out.print("Fecha de nacimiento (YYYY-MM-DD): ");
-			fecha_nacimiento = reader.nextLine();
+			fechaNacimiento = reader.nextLine();
 			
 			System.out.print("Email: ");
 			email = reader.nextLine();
@@ -52,7 +52,7 @@ public class Ejer7 {
 			PreparedStatement sentencia = con.prepareStatement(consulta);
 			sentencia.setString(1, nombre);
 			sentencia.setString(2, apellido);
-			sentencia.setString(3, fecha_nacimiento);
+			sentencia.setString(3, fechaNacimiento);
 			sentencia.setString(4, email);
 			sentencia.setString(5, telefono);
 			
